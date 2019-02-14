@@ -198,7 +198,7 @@ void loop() {
            Serial.printf("topic:%s\r\n", output_topic.c_str());
            Serial.printf("message:%s\r\n", output_message.c_str());
           strcpy(buf.topic, output_topic.c_str());
-          strcpy(buf.message, output_topic.c_str());
+          strcpy(buf.message, output_message.c_str());
           client.publish(buf.topic, buf.message, true); //数据发送至服务器   
           }
       }
