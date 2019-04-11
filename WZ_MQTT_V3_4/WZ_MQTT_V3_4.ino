@@ -83,7 +83,7 @@ void setup() {
   delay(1000);
   Serial.print("wifi_OK\r\n");
   Serial.print("please connect the server!\r\n");
-  delay(2000);
+  delay(5000);
   inputString.reserve(200);
 }
 /*********************************测试网络**************************************/
