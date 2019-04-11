@@ -144,6 +144,12 @@ void setup_wifi() {
 /*********************************服务器连接**************************************/
 void reconnect() {
   while (!client.connected()) {
+
+    while (!get_network())  //wifi断网重连
+    {
+      setup_wifi();
+    }
+
     String clientName;
     clientName += "esp8266-";
     uint8_t mac[6];
